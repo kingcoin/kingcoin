@@ -6,8 +6,7 @@ Source Code: https://github.com/kingcoin/kingcoin
 Specs:
 - POS+POW
 - alog: Keccak 512 + Chacha + Keccak 256
-- diff retarget every block
-- Coin Control features: control which coin to send, avoid to send those coins that have bigger coin age
+- Coin Control features: control which coin to send, avoid to send those coins that have bigger coin age, this features will save the interest of your coins, to enable this function, you must select "Display coin control features (experts only!)"  under menu options.
 - P2P port: 33332, RPC port: 33333
 - Total coins: 0.1 billion
 - 60 seconds a block
