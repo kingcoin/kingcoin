@@ -1,16 +1,16 @@
 /*
-	scrypt-jane by Andrew M, https://github.com/floodyberry/scrypt-jane
+	scrypt-new by Andrew M, https://github.com/floodyberry/scrypt-new
 
 	Public Domain or MIT License, whichever is easier
 */
 
 #include <string.h>
 
-#include "scrypt-jane.h"
-#include "code/scrypt-jane-portable.h"
-#include "code/scrypt-jane-hash.h"
-#include "code/scrypt-jane-romix.h"
-#include "code/scrypt-jane-test-vectors.h"
+#include "scrypt-new.h"
+#include "code/scrypt-new-portable.h"
+#include "code/scrypt-new-hash.h"
+#include "code/scrypt-new-romix.h"
+#include "code/scrypt-new-test-vectors.h"
 
 
 #define scrypt_maxN 30  /* (1 << (30 + 1)) = ~2 billion */

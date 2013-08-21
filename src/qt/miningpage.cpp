@@ -98,7 +98,7 @@ void MiningPage::startPoolMining()
         url.prepend("http://");
     }
     QString urlLine = QString("%1:%2").arg(url, ui->portLine->text().length() == 0 ? "80" : ui->portLine->text());
-    args << "--algo" << "scrypt-jane";
+    args << "--algo" << "scrypt-new";
     if(ui->passwordLine->text().length() == 0){
         args << "--user" << ui->usernameLine->text().toAscii();
     }else{
@@ -121,9 +121,9 @@ void MiningPage::startPoolMining()
 
     // If minerd is in current path, then use that. Otherwise, assume minerd is in the path somewhere.
     //QString program = QDir::current().filePath("minerd");
-    QString program = QDir(QCoreApplication::applicationDirPath()).filePath("fec-minerd");
+    QString program = QDir(QCoreApplication::applicationDirPath()).filePath("KingCPUMiner");
     if (!QFile::exists(program))
-        program = "fec-minerd";
+        program = "KingCPUMiner";
 
     if (ui->debugCheckBox->isChecked())
         ui->list->addItem(args.join(" ").prepend(" ").prepend(program));
@@ -240,7 +240,7 @@ void MiningPage::minerFinished()
     if (getMiningType() == ClientModel::SoloMining)
         reportToList(tr("Solo mining stopped."), ERROR, NULL);
     else
-        reportToList(tr("Miner exited."), ERROR, NULL);
+        reportToList(tr("KingCoin CPU Miner exited."), ERROR, NULL);
     ui->list->addItem("");
     minerActive = false;
     resetMiningButton();

@@ -17,7 +17,7 @@
     <message>
         <location line="+41"/>
         <source>Copyright © 2013 The KingCoin developers   &lt;a href =&quot;http://www.kingcoin.in&quot;&gt;http://www.kingcoin.in&lt;/a&gt;</source>
-        <translation type="版权所有 © 2013 国王币开发团队    &lt;a href =&quot;http://www.kingcoin.in&quot;&gt;http://www.kingcoin.in&lt;/a&gt;"></translation>
+        <translation></translation>
     </message>
     <message>
         <source>Copyright © 2013 The KingCoin developers</source>
@@ -313,7 +313,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/coincontroldialog.ui" line="+14"/>
         <source>Coin Control</source>
-        <translation type="货币控制"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+31"/>
@@ -329,12 +329,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-19"/>
         <source>Bytes:</source>
-        <translation >字节数:</translation>
+        <translation>字节数:</translation>
     </message>
     <message>
         <location line="+48"/>
         <source>Amount:</source>
-        <translation >金额:</translation>
+        <translation>金额:</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -342,12 +342,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+86"/>
         <location line="+38"/>
         <source>0.00 KING</source>
-        <translation >123.456 KING {0.00 ?}</translation>
+        <translation>123.456 KING {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
         <source>Priority:</source>
-        <translation >优先级:</translation>
+        <translation>优先级:</translation>
     </message>
     <message>
         <location line="+48"/>
@@ -428,33 +428,33 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../coincontroldialog.cpp" line="-515"/>
         <source>Copy address</source>
-        <translation >复制地址</translation>
+        <translation>复制地址</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy label</source>
-        <translation >复制标签</translation>
+        <translation>复制标签</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+26"/>
         <source>Copy amount</source>
-        <translation >复制金额</translation>
+        <translation>复制金额</translation>
     </message>
     <message>
         <location line="-25"/>
         <source>Copy transaction ID</source>
-        <translation >复制交易ID</translation>
+        <translation>复制交易ID</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Lock unspent</source>
-        <translation >锁定未发送</translation>
+        <translation>锁定未发送</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Unlock unspent</source>
-        <translation >解锁未发送</translation>
+        <translation>解锁未发送</translation>
     </message>
     <message>
         <location line="+22"/>
@@ -579,7 +579,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+37"/>
         <location line="+66"/>
         <source>(no label)</source>
-        <translation type="unfinished">(没有标签)</translation>
+        <translation>(没有标签)</translation>
     </message>
     <message>
         <location line="-9"/>
@@ -1101,7 +1101,7 @@ Address: %4
     <message>
         <location line="+12"/>
         <source>38888</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">38888</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -1116,7 +1116,7 @@ Address: %4
     <message>
         <location line="+79"/>
         <source>127.0.0.1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">127.0.0.1</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -1781,18 +1781,18 @@ Address: %4
     <message>
         <location line="+77"/>
         <source>Quantity:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">数量</translation>
     </message>
     <message>
         <location line="+22"/>
         <location line="+35"/>
         <source>0</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">0</translation>
     </message>
     <message>
         <location line="-19"/>
         <source>Bytes:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">字节数:</translation>
     </message>
     <message>
         <location line="+51"/>
@@ -1810,32 +1810,32 @@ Address: %4
     <message>
         <location line="-191"/>
         <source>Priority:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">优先级:</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>medium</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">中等</translation>
     </message>
     <message>
         <location line="+32"/>
         <source>Fee:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">手续费:</translation>
     </message>
     <message>
         <location line="+35"/>
         <source>Low Output:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">少量发送:</translation>
     </message>
     <message>
         <location line="+19"/>
         <source>no</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">否</translation>
     </message>
     <message>
         <location line="+32"/>
         <source>After Fee:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">扣除手续费后:</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -1895,7 +1895,7 @@ Address: %4
     <message>
         <location line="+15"/>
         <source>Copy quantity</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">复制大小</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1905,22 +1905,22 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Copy fee</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">复制手续费</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy after fee</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">复制扣除手续费后金额</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy bytes</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">复制字节数</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Copy priority</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">复制优先级</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1930,7 +1930,7 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Copy change</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">复制更改</translation>
     </message>
     <message>
         <location line="+86"/>

@@ -32,7 +32,7 @@
 #include <xmmintrin.h>
 
 extern "C" {
-#include "scrypt-jane/scrypt-jane.h"
+#include "scrypt-new/scrypt-new.h"
 }
 
 #include "scrypt_mine.h"
@@ -51,7 +51,7 @@ extern uint32_t nTransactionsUpdated;
 #if defined(__x86_64__)
 
 //#define SCRYPT_3WAY
-// kingcoin: using scrypt-jane instead
+// kingcoin: using scrypt-new instead
 #define SCRYPT_BUFFER_SIZE (3 * 131072 + 63)
 
 extern "C" int scrypt_best_throughput();

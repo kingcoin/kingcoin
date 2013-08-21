@@ -262,7 +262,7 @@ SOURCES += src/qt/kingcoin.cpp src/qt/kingcoingui.cpp \
     src/scrypt-x86_64.S \
     src/scrypt_mine.cpp \
     src/pbkdf2.cpp \
-    src/scrypt-jane/scrypt-jane.c \
+    src/scrypt-new/scrypt-new.c \
     src/qt/miningpage.cpp
 
 RESOURCES += \

@@ -1,5 +1,5 @@
 #define SCRYPT_TEST
-#include "scrypt-jane.c"
+#include "scrypt-new.c"
 
 int main() {
 	int res = scrypt_power_on_self_test();

@@ -1,5 +1,5 @@
 #define SCRYPT_TEST_SPEED
-#include "scrypt-jane.c"
+#include "scrypt-new.c"
 
 /* ticks - not tested on anything other than x86 */
 static uint64_t

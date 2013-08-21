@@ -1,15 +1,15 @@
 #if defined(SCRYPT_BLAKE512)
-#include "scrypt-jane-hash_blake512.h"
+#include "scrypt-new-hash_blake512.h"
 #elif defined(SCRYPT_BLAKE256)
-#include "scrypt-jane-hash_blake256.h"
+#include "scrypt-new-hash_blake256.h"
 #elif defined(SCRYPT_SHA512)
-#include "scrypt-jane-hash_sha512.h"
+#include "scrypt-new-hash_sha512.h"
 #elif defined(SCRYPT_SHA256)
-#include "scrypt-jane-hash_sha256.h"
+#include "scrypt-new-hash_sha256.h"
 #elif defined(SCRYPT_SKEIN512)
-#include "scrypt-jane-hash_skein512.h"
+#include "scrypt-new-hash_skein512.h"
 #elif defined(SCRYPT_KECCAK512) || defined(SCRYPT_KECCAK256)
-#include "scrypt-jane-hash_keccak.h"
+#include "scrypt-new-hash_keccak.h"
 #else
 	#define SCRYPT_HASH "ERROR"
 	#define SCRYPT_HASH_BLOCK_SIZE 64
@@ -23,7 +23,7 @@
 	#error must define a hash function!
 #endif
 
-#include "scrypt-jane-pbkdf2.h"
+#include "scrypt-new-pbkdf2.h"
 
 #define SCRYPT_TEST_HASH_LEN 257 /* (2 * largest block size) + 1 */
 
