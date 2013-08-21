@@ -1,0 +1,5 @@
+KingCoin usr/bin
+share/pixmaps/kingcoin32.xpm usr/share/pixmaps
+share/pixmaps/kingcoin80.xpm usr/share/pixmaps
+debian/KingCoin.desktop usr/share/applications
+debian/KingCoin.protocol usr/share/kde4/services/

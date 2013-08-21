@@ -1,0 +1,2 @@
+debian/bin/kingcoind usr/bin
+src/kingcoind usr/lib/kingcoin

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=KingCoin
+Comment=KingCoin P2P Cryptocurrency
+Comment[fr]=KingCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=KingCoin, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/KingCoin
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/kingcoin80.xpm
+MimeType=x-scheme-handler/kingcoin;
+Categories=Office;
