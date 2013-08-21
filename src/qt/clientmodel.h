@@ -13,7 +13,7 @@ class QDateTime;
 class QTimer;
 QT_END_NAMESPACE
 
-/** Model for Freecoin network client. */
+/** Model for Kingcoin network client. */
 class ClientModel : public QObject
 {
     Q_OBJECT

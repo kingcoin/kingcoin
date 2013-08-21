@@ -231,7 +231,7 @@ void MiningPage::minerError(QProcess::ProcessError error)
 {
     if (error == QProcess::FailedToStart)
     {
-        reportToList(tr("Miner failed to start. Make sure you have the minerd executable and libraries in the same directory as freecoin-Qt."), ERROR, NULL);
+        reportToList(tr("Miner failed to start. Make sure you have the minerd executable and libraries in the same directory as KingCoin-Qt."), ERROR, NULL);
     }
 }
 
