@@ -992,12 +992,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+16"/>
-        <source>Mining freecoins at %1 hashes per second</source>
+        <source>Mining kingcoins at %1 hashes per second</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
-        <source>Not mining freecoins</source>
+        <source>Not mining kingcoins</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1211,7 +1211,7 @@ Address: %4
     </message>
     <message>
         <location line="+27"/>
-        <source>Miner failed to start. Make sure you have the minerd executable and libraries in the same directory as freecoin-Qt.</source>
+        <source>Miner failed to start. Make sure you have the minerd executable and libraries in the same directory as kingcoin-Qt.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
