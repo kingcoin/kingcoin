@@ -67,7 +67,7 @@ scrypt_power_on_self_test() {
 
 	for (i = 0, scrypt_valid = 1; post_settings[i].pw; i++) {
 		t = post_settings + i;
-		scrypt((uint8_t *)t->pw, strlen(t->pw), (uint8_t *)t->salt, strlen(t->salt), t->Nfactor, t->rfactor, t->pfactor, test_digest, sizeof(test_digest));
+		scrypt((uint8_t *)t->pw, strlen(t->pw), (uint8_t *)t->salt, strlen(t->salt), t->NDiffParameter, t->rfactor, t->pfactor, test_digest, sizeof(test_digest));
 		scrypt_valid &= scrypt_verify(post_vectors[i], test_digest, sizeof(test_digest));
 	}
 	
@@ -132,7 +132,7 @@ scrypt_free(scrypt_aligned_alloc *aa) {
 
 
 void
-scrypt(const uint8_t *password, size_t password_len, const uint8_t *salt, size_t salt_len, uint8_t Nfactor, uint8_t rfactor, uint8_t pfactor, uint8_t *out, size_t bytes) {
+scrypt(const uint8_t *password, size_t password_len, const uint8_t *salt, size_t salt_len, uint8_t NDiffParameter, uint8_t rfactor, uint8_t pfactor, uint8_t *out, size_t bytes) {
 	scrypt_aligned_alloc YX, V;
 	uint8_t *X, *Y;
 	uint32_t N, r, p, chunk_bytes, i;
@@ -150,14 +150,14 @@ scrypt(const uint8_t *password, size_t password_len, const uint8_t *salt, size_t
 	}
 #endif
 
-	if (Nfactor > scrypt_maxN)
+	if (NDiffParameter > scrypt_maxN)
 		scrypt_fatal_error("scrypt: N out of range");
 	if (rfactor > scrypt_maxr)
 		scrypt_fatal_error("scrypt: r out of range");
 	if (pfactor > scrypt_maxp)
 		scrypt_fatal_error("scrypt: p out of range");
 
-	N = (1 << (Nfactor + 1));
+	N = (1 << (NDiffParameter + 1));
 	r = (1 << rfactor);
 	p = (1 << pfactor);
 

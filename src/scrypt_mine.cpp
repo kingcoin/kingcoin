@@ -94,11 +94,11 @@ static void scrypt(const void* input, size_t inputlen, uint32_t *res, void *scra
     PBKDF2_SHA256((const uint8_t*)input, inputlen, (uint8_t *)X, 128, 1, (uint8_t*)res, 32);
 }
 
-void scrypt_hash(const void* input, size_t inputlen, uint32_t *res, unsigned char Nfactor)
+void scrypt_hash(const void* input, size_t inputlen, uint32_t *res, unsigned char NDiffParameter)
 {
     return scrypt((const unsigned char*)input, inputlen,
                   (const unsigned char*)input, inputlen,
-                  Nfactor, 0, 0, (unsigned char*)res, 32);
+                  NDiffParameter, 0, 0, (unsigned char*)res, 32);
 }
 
 #ifdef SCRYPT_3WAY
@@ -139,7 +139,7 @@ static void scrypt_3way(const void *input1, const void *input2, const void *inpu
 
 unsigned int scanhash_scrypt(block_header *pdata,
     uint32_t max_nonce, uint32_t &hash_count,
-    void *result, block_header *res_header, unsigned char Nfactor)
+    void *result, block_header *res_header, unsigned char NDiffParameter)
 {
     hash_count = 0;
     block_header data = *pdata;
@@ -199,7 +199,7 @@ unsigned int scanhash_scrypt(block_header *pdata,
         //scrypt(&data, 80, hash, scratchbuf);
         scrypt((const unsigned char*)&data, 80,
                (const unsigned char*)&data, 80,
-               Nfactor, 0, 0, (unsigned char*)hash, 32);
+               NDiffParameter, 0, 0, (unsigned char*)hash, 32);
         hash_count += 1;
 #endif
         if (hashc[31] == 0 && hashc[30] == 0) {

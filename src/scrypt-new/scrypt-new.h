@@ -2,8 +2,8 @@
 #define SCRYPT_JANE_H
 
 /*
-	Nfactor: Increases CPU & Memory Hardness
-	N = (1 << (Nfactor + 1)): How many times to mix a chunk and how many temporary chunks are used
+	NDiffParameter: Increases CPU & Memory Hardness
+	N = (1 << (NDiffParameter + 1)): How many times to mix a chunk and how many temporary chunks are used
 
 	rfactor: Increases Memory Hardness
 	r = (1 << rfactor): How large a chunk is
@@ -22,6 +22,6 @@
 typedef void (*scrypt_fatal_errorfn)(const char *msg);
 void scrypt_set_fatal_error(scrypt_fatal_errorfn fn);
 
-void scrypt(const unsigned char *password, size_t password_len, const unsigned char *salt, size_t salt_len, unsigned char Nfactor, unsigned char rfactor, unsigned char pfactor, unsigned char *out, size_t bytes);
+void scrypt(const unsigned char *password, size_t password_len, const unsigned char *salt, size_t salt_len, unsigned char NDiffParameter, unsigned char rfactor, unsigned char pfactor, unsigned char *out, size_t bytes);
 
 #endif /* SCRYPT_JANE_H */

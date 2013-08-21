@@ -1,6 +1,6 @@
 typedef struct scrypt_test_setting_t {
 	const char *pw, *salt;
-	uint8_t Nfactor, rfactor, pfactor;
+	uint8_t NDiffParameter, rfactor, pfactor;
 } scrypt_test_setting;
 
 static const scrypt_test_setting post_settings[] = {

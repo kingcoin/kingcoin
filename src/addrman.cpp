@@ -342,10 +342,10 @@ bool CAddrMan::Add_(const CAddress &addr, const CNetAddr& source, int64 nTimePen
             return false;
 
         // stochastic test: previous nRefCount == N: 2^N times harder to increase it
-        int nFactor = 1;
+        int nDiffParameter = 1;
         for (int n=0; n<pinfo->nRefCount; n++)
-            nFactor *= 2;
-        if (nFactor > 1 && (GetRandInt(nFactor) != 0))
+            nDiffParameter *= 2;
+        if (nDiffParameter > 1 && (GetRandInt(nDiffParameter) != 0))
             return false;
     } else {
         pinfo = Create(addr, source, &nId);

@@ -52,7 +52,7 @@ get_ticks(void) {
 
 typedef struct scrypt_speed_settings_t {
 	const char *desc;
-	uint8_t Nfactor, rfactor, pfactor;
+	uint8_t NDiffParameter, rfactor, pfactor;
 } scrypt_speed_settings;
 
 /* scrypt_r_32kb is set to a 32kb chunk, so (1 << (scrypt_r_32kb - 5)) = 1kb chunk */
@@ -96,7 +96,7 @@ int main() {
 			s = &settings[i];
 			minticks = maxticks;
 			for (passes = 0; passes < 16; passes++)
-				timeit(scrypt(password, sizeof(password), salt, sizeof(salt), s->Nfactor, s->rfactor, s->pfactor, digest, sizeof(digest)), minticks)
+				timeit(scrypt(password, sizeof(password), salt, sizeof(salt), s->NDiffParameter, s->rfactor, s->pfactor, digest, sizeof(digest)), minticks)
 
 			printf("%s, %.0f ticks\n", s->desc, (double)minticks);
 		}

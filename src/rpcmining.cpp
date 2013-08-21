@@ -101,7 +101,7 @@ Value gethashespersec(const Array& params, bool fHelp)
 
 Value getmininginfo(const Array& params, bool fHelp)
 {
-    unsigned char Nfactor;
+    unsigned char NDiffParameter;
     uint64_t N;
 
     if (fHelp || params.size() != 0)
@@ -122,11 +122,11 @@ Value getmininginfo(const Array& params, bool fHelp)
     obj.push_back(Pair("pooledtx",      (uint64_t)mempool.size()));
     obj.push_back(Pair("testnet",       fTestNet));
 
-    // WM - Tweaks to report current Nfactor and N.
-    Nfactor = CalculateN( nBestHeightTime );
-    N = 1 << ( Nfactor + 1 );
+    // WM - Tweaks to report current NDiffParameter and N.
+    NDiffParameter = CalculateN( nBestHeightTime );
+    N = 1 << ( NDiffParameter + 1 );
     
-    //obj.push_back( Pair( "Nfactor", Nfactor ) );
+    //obj.push_back( Pair( "NDiffParameter", NDiffParameter ) );
     //obj.push_back( Pair( "N", N ) );
     
     // WM - Report current Proof-of-Work block reward.
